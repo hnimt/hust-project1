@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.yworks.yfiles.view.GraphControl?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:controller="sample.HelloWorldController" xmlns:fx="http://javafx.com/fxml">
+    <center>
+        <GraphControl fx:id="graphControl"/>
+    </center>
+    <right>
+        <VBox spacing="5">
+            <Button fx:id="btnCreateNode">Create node</Button>
+            <Button fx:id="btnCreateLink">Create link</Button>
+        </VBox>
+    </right>
+</BorderPane>
