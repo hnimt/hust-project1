@@ -171,12 +171,12 @@ public class HelloWorldController {
     public void showNodeGeneral(MyNode myNode){
         NodeGeneralScene nodeGeneralScene = new NodeGeneralScene(myNode, myNode.getName());
         nodeGeneralScene.initModality(Modality.APPLICATION_MODAL);
-        nodeGeneralScene.setOnHiding(new EventHandler<WindowEvent>() {
-            @Override
-            public void handle(WindowEvent event) {
-                nodeGeneralScene.getMyNode();
-            }
-        });
+//        nodeGeneralScene.setOnHiding(new EventHandler<WindowEvent>() {
+//            @Override
+//            public void handle(WindowEvent event) {
+//                nodeGeneralScene.getMyNode();
+//            }
+//        });
         nodeGeneralScene.showAndWait();
     }
 
@@ -184,12 +184,12 @@ public class HelloWorldController {
     public void showLinkCreationScene(MyNetwork myNetwork){
         LinkCreationScene linkCreationScene = new LinkCreationScene(new MyLink(), myNetwork, "Create link");
         linkCreationScene.initModality(Modality.APPLICATION_MODAL);
-        linkCreationScene.setOnHiding(new EventHandler<WindowEvent>() {
-            @Override
-            public void handle(WindowEvent event) {
-                linkCreationScene.createMyLink();
-            }
-        });
+//        linkCreationScene.setOnHiding(new EventHandler<WindowEvent>() {
+//            @Override
+//            public void handle(WindowEvent event) {
+//                linkCreationScene.createMyLink();
+//            }
+//        });
         linkCreationScene.showAndWait();
     }
 

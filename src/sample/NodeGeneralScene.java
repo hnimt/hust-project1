@@ -44,6 +44,7 @@ public class NodeGeneralScene extends Stage implements IEditScene {
         btnOk.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                getMyNode();
                 closeStage();
             }
         });
