@@ -16,4 +16,4 @@ Application used to create bayesian network to predict probability of an event
 2. Edit Node
 3. Remove Node
 4. Choose Node
-5. Caclculate probability of event is relative with choose nodes
+5. Calculate probability of event is relative with choosen nodes
